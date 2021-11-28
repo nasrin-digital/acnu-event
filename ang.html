@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+  <head><script src="angular.min.js"></script></head>
+  <body ng-init="index=0">
+  <p>
+     <a href="#" ng-click=" index=1 ">001</a> 
+     <a href="#" ng-click=" index=2 ">002</a> 
+     <a href="#" ng-click=" index=3 ">003</a> 
+     <a href="#" ng-click=" index=4 ">004</a> 
+   </p>
+   <div ng-show=" index==1 "><img src="image1.jpg" /></div> 
+   <div ng-show=" index==2 "><img src="image2.jpg" /></div> 
+   <div ng-show=" index==3 "><img src="image3.jpg" /></div> 
+   <div ng-show=" index==4 "><img src="image4.jpg" /></div>
+   
+   
+   <p ng-class="{'strike': false, 'bold': false, 'red': 1, 'i': 0}">
+    Map Syntax Example
+ </p>
+  </body>
+</html>

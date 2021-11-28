@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Admin/ Officer</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/fonts/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="css/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="css/prettify.min.css" rel="stylesheet">
+	
+    <!-- bootstrap-daterangepicker -->
+    <link href="css/daterangepicker.css" rel="stylesheet">
+   
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.min.css" rel="stylesheet">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/officer.js"></script>
+    <script type="text/javascript">
+		showOfficer();
+  	</script>
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>ACNU</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/admin.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Admin</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Home </a></li>
+                  <li><a href="event.html"><i class="fa fa-bullhorn"></i> Event </a></li>
+                  <li><a href="officer.html"><i class="fa fa-group"></i> Officer </a></li>
+                  <li><a href="ticket.html"><i class="fa fa-ticket"></i> Ticket </a></li>
+                  <li><a href="table.html"><i class="fa fa-circle-thin"></i> Table </a></li>
+                  <li><a href="seat.html"><i class="fa fa-map-marker"></i> Seat </a></li>
+                  <li><a href="food.html"><i class="fa fa-cutlery"></i> Food </a></li>
+                  <li><a href="guest.html"><i class="fa fa-heart"></i>Guest </a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+          </div>
+        </div>
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Add Officer</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="row">
+                      <!-- CONTENT  -->
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_content">
+                				<div class="row">
+                                	<div class="col-md-1 col-sm-1 col-xs-1 form-group">
+                                    	<span style="margin-top:10px; float:left;">First Name</span>
+                                    </div>
+                                	<div class="col-md-2 col-sm-2 col-xs-2 form-group">
+                                        <input type="text" class="form-control" id="officerFirstName">
+                                    </div>
+                                    <div class="col-md-1 col-sm-1 col-xs-1 form-group">
+                                    	<span style="margin-top:10px; float:left;">Last Name</span>
+                                    </div>
+                                	<div class="col-md-2 col-sm-2 col-xs-2 form-group">
+                                        <input type="text" class="form-control" id="officerLastName">
+                                    </div>
+                                    <div class="col-md-1 col-sm-1 col-xs-1 form-group">
+                                    	<span style="margin-top:10px; float:left;">Cellphone</span>
+                                    </div>
+                                	<div class="col-md-2 col-sm-2 col-xs-2 form-group">
+                                        <input type="text" class="form-control" id="officerCellphone">
+                                    </div>
+                                    <div class="col-md-1 col-sm-1 col-xs-1 form-group">
+                                    	<span style="margin-top:10px; float:left;">Comment</span>
+                                    </div>
+                                	<div class="col-md-2 col-sm-2 col-xs-2 form-group">
+                                        <input type="text" class="form-control" id="officerComment">
+                                    </div>
+                                	
+                                    <div class="clearfix"></div>
+                                    
+                                </div><!-- end row-->
+                                <div class="form-group">
+                                  <div class="col-md-5 col-md-offset-3" style="float:right; padding-right:0px;">
+                                    <button type="button" class="btn btn-success" onClick="addOfficer();" style="float:right; margin-right:0px;">Add</button>									<span id="officerMessage" style="float:left; margin-top:10px;"></span>
+                                  </div>
+                                </div>
+                            </div><!-- end x_content--> 
+                            
+                            <div class="x_title">
+                            <h2>Search Officer</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_panel">
+                            <div class="x_content">
+                				<div class="row">
+                                	
+                                    <div class="col-md-2 col-sm-2 col-xs-2 form-group">
+                                    	<span style="margin-top:10px; float:left;">First name or Last name</span>
+                                    </div>
+                                	<div class="col-md-2 col-sm-2 col-xs-2">
+                                        <input type="text" name="country" id="autocomplete-custom-append" class="form-control col-md-10"/>
+                                    </div>
+                                    
+                                    
+                                    <div class="form-group">
+                                    	<button type="submit" class="btn btn-success" style="float:left; margin-right:0px;">Search</button>
+                                	</div>                       	
+                                    <div class="clearfix"></div>
+                                    
+                                </div><!-- end row--> 
+                            </div><!-- end x_content--> 
+                            <div class="x_content" id="showOfficer"></div><!-- end x_content-->    
+                            
+                        </div><!-- end x_panel-->
+                        
+                        
+                      <!-- /CONTENT -->
+                      </div><!-- end row-->
+                    </div><!-- end x_content-->
+                  </div><!-- end x_panel-->
+                 </div><!-- end col-md-12-->
+                </div><!-- end row-->
+              </div><!-- end x_panel-->  
+            </div><!-- end col-md-12-->
+          </div><!-- end row-->
+        </div><!-- end class->
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            ACNU All Rights Reserved - © 2018
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="js/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="js/nprogress.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="js/bootstrap-wysiwyg.min.js"></script>
+    <script src="js/jquery.hotkeys.js"></script>
+    <script src="js/prettify.js"></script>
+	<!-- bootstrap-daterangepicker -->
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="js/jquery.autocomplete.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+
+  </body>
+</html>
